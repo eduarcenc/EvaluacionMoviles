@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Estudiante">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="441dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtParcial1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtParcial1"
+        app:layout_constraintVertical_bias="0.535">
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="296dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:hint="Digite Nombre"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/txtCodigo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtCodigo"
+            android:layout_width="299dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginStart="8dp"
+            android:hint="Digite Codigo"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/txtMateria"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+        <EditText
+            android:id="@+id/txtMateria"
+            android:layout_width="302dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginStart="8dp"
+            android:hint="Materia"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/txtParcial1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtCodigo" />
+
+        <EditText
+            android:id="@+id/txtParcial1"
+            android:layout_width="192dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Primer Parcial (30%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/txtParcial2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMateria" />
+
+        <EditText
+            android:id="@+id/txtParcial2"
+            android:layout_width="192dp"
+            android:layout_height="43dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Segundo Parcial (30%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/txtParcial3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtParcial1" />
+
+        <EditText
+            android:id="@+id/txtParcial3"
+            android:layout_width="193dp"
+            android:layout_height="39dp"
+            android:hint="Tercer Parcial (40%)"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.083"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtParcial2" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="306dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="Guardar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>
